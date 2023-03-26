@@ -2,8 +2,7 @@
 Foobar is a placeholder text for info on runAm.
 
 ## Authors
-[Asuk](#https://www.github.com/AsukFavour)
-[Chinaeme Emerole](#https://www.github.com/bignemz)
+
 [Amaino](#https://www.github.com/amainooti)
 
 Pull requests are welcome. For major changes, please open an issue first
