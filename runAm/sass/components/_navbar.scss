@@ -8,12 +8,13 @@
     .nav-container {
     text-align: center;
     height: 14.84375vh;
-    width: calc(93.9% - 3rem);
+    width: calc(98.9% - 3rem);
     @include flex-row(space-between, center);
     margin: 0 3rem ;
 
     .nav-items {
-        @include flex-row(start, center, .8125rem);
+        padding: 0;
+        @include flex-row(start, center, 2.325rem);
         li {
             align-self: flex-start;
         }
