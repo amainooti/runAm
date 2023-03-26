@@ -1,0 +1,41 @@
+@use '../utils/mixins' as b;
+@use '../utils/mixins' as *;
+@use "../base/variables" as v;
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    .nav-container {
+    text-align: center;
+    height: 14.84375vh;
+    width: calc(93.9% - 3rem);
+    @include flex-row(space-between, center);
+    margin: 0 3rem ;
+
+    .nav-items {
+        @include flex-row(start, center, .8125rem);
+        li {
+            align-self: flex-start;
+        }
+        li > a {
+            text-transform: capitalize;
+        }
+    }
+
+    .logo-section {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .authentication {
+        display: flex;
+        gap: 8px;
+        .dark {
+            @include b.button(v.$dark, #fff);
+        }
+        .light {
+            @include b.button(v.$white-background, v.$dark-varient);
+        }
+    }
+}
+}

@@ -1,4 +1,5 @@
 // basic web resets
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
 
 html {
     box-sizing: border-box;
@@ -7,6 +8,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Playfair', sans-serif;
 }
 
 *,
