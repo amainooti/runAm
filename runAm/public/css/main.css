@@ -93,6 +93,7 @@ a:visited {
   background-color: #2D2D2D;
   color: #fff;
   border-radius: 300px;
+  text-transform: capitalize;
 }
 .wrapper .nav-container .authentication .light {
   display: flex;
@@ -104,4 +105,5 @@ a:visited {
   background-color: #F4F4F4;
   color: #212121;
   border-radius: 300px;
+  text-transform: capitalize;
 }
