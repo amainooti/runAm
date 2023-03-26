@@ -1,5 +1,5 @@
 // fonts imports and any font styling universally goes here.
-
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
 
 h1,
 h2,
@@ -9,4 +9,18 @@ h5,
 h6 {
     font-size: 100%;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
+
+$color:(
+    color_1:#231270,
+    color_2:#F6F7F7,
+    color_3:#0094FF,
+    color_4:#5F0D16,
+    color_5:#104928,
+    color_6:#2D2D2D,
+    color_7:#E9E7F1,
+    color_8:#DAD5F0,
+    starcolor:#F6A71A
+)
