@@ -156,7 +156,7 @@ a:visited {
   position: absolute;
   width: 100px;
   top: 64px;
-  right: 224px;
+  right: 227px;
 }
 @media (max-width: 768px) {
   .jumbo-container .jumbo-content .swirl {
@@ -214,7 +214,7 @@ a:visited {
   padding: 15px 30px;
   width: 150px;
   height: 51px;
-  background-color: #2D2D2D;
+  background-color: #231270;
   color: #FFF;
   border-radius: 300px;
   text-transform: capitalize;

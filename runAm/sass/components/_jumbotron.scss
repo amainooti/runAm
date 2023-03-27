@@ -37,7 +37,7 @@
                 position: absolute;
                 width: 100px;
                 top: 64px;
-                right: 224px;
+                right: 227px;
                 @include media("<=tablet") {
                     display: none;
                 }
@@ -87,7 +87,7 @@
             }
         }
         a {
-            @include b.button(v.$dark, v.$white);
+            @include b.button(v.$dark-blue, v.$white);
         }
     }
 }
