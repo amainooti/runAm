@@ -28,6 +28,11 @@
             @include media("<=tablet") {
                 display: none;
             }
+            .line {
+                width: 20px;
+                height: 1px;
+                background-color: black;
+            }
         }
     }
     .jumbo-text{
@@ -43,7 +48,7 @@
     }
     form {
         .form-wrapper{
-            @include layout.flex-row(start, center, 1.25rem);
+            @include layout.flex-row(start, center, 1rem);
             @include media("<=989px") {
                 display: none;
             }
