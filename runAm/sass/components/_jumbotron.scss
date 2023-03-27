@@ -36,10 +36,11 @@
             .swirl{
                 position: absolute;
                 width: 100px;
-                top: 64px;
-                right: 227px;
+                // top: 64px;
+                  right: 227px;
                 @include media("<=tablet") {
                     display: none;
+                    
                 }
             }
 
