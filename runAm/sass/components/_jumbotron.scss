@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 .jumbo-container {
-    background: url("../../public/assets/banner.jpg");
+    background: url("../../assets/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-
+    width: 100% ;
+    background-position: 14%;
     background-color: v.$white-background;
     // height: 46.09375vh;
     padding: 3rem 0;
@@ -23,15 +23,30 @@
         @include media("<=989px") {
             width: 100%;
         }
-        .line {
-            img {
+
+            .pointer {
+                position: absolute;
                 width: 100px;
+                right: 158px;
+                top: 16px;
+                @include media("<=tablet") {
+                    display: non;
+                }
+            }
+            .swirl{
+                position: absolute;
+                width: 100px;
+                top: 64px;
+                right: 224px;
+                @include media("<=tablet") {
+                    display: none;
+                }
             }
 
-        }
         .art-text {
             position: absolute;
             font-family: 'Covered By Your Grace', sans-serif;
+            color: v.$white;
             font-size: 1.5rem;
             right: 4.45rem;
             top: 2.7975rem;
@@ -43,11 +58,13 @@
     .jumbo-text{
 
         .span-1 {
-        opacity: .1;
+        opacity: .6;
         font-size: 2rem;
+        color: white;
         }
         .span-2 {
          font-size: 2rem;
+         color: white
 
         }
     }
@@ -77,8 +94,10 @@
 
 p {
     color: #cacaca;
+
 }
 p > span{
-    color: v.$dark;
+    color: white;
+    font-weight: bold;
 }
 }

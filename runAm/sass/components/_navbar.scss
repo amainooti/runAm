@@ -18,9 +18,10 @@
         @include flex-row(start, center, 2.325rem);
         li {
             align-self: flex-start;
-        }
-        li > a {
-            text-transform: capitalize;
+            a {
+               text-transform: capitalize;
+               color: #878C95;
+           }
         }
     }
 
@@ -33,10 +34,11 @@
         display: flex;
         gap: 8px;
         .dark {
-            @include b.button(v.$dark, #fff);
+            @include b.button(v.$dark-blue, #fff);
         }
         .light {
-            @include b.button(v.$white-background, v.$dark-varient);
+            @include b.button(v.$white-background, v.$dark-blue);
+            border: 2px solid #9A92BD;
         }
         @include media("<=tablet"){
             display: none;
