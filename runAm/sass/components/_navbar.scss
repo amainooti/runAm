@@ -1,5 +1,6 @@
 @use '../utils/mixins' as b;
 @use '../utils/mixins' as *;
+@use '../utils//breakpoints' as *;
 @use "../base/variables" as v;
 
 .wrapper {
@@ -36,6 +37,9 @@
         }
         .light {
             @include b.button(v.$white-background, v.$dark-varient);
+        }
+        @include media("<=tablet"){
+            display: none;
         }
     }
 }

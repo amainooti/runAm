@@ -1,6 +1,6 @@
+@use "../base/variables" as v;
 
-
-@mixin button($background-color, $color){
+@mixin button($background-color:v.$dark, $color:vwhite){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
     text-transform: capitalize;
 }
 
-@mixin flex-row($jc:start, $ac:normal, $gap:3){
+@mixin flex-row($jc:start, $ac:normal, $gap:0){
     display: flex;
     justify-content: $jc;
     align-items: $ac;

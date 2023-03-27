@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -60,7 +61,7 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3;
+  gap: 0;
   margin: 0 3rem;
 }
 .wrapper .nav-container .nav-items {
@@ -106,4 +107,90 @@ a:visited {
   color: #212121;
   border-radius: 300px;
   text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .wrapper .nav-container .authentication {
+    display: none;
+  }
+}
+
+.jumbo-container {
+  background-color: #F4F4F4;
+  width: 100%;
+  padding: 3rem 0;
+  display: grid;
+  place-items: center;
+}
+.jumbo-container .jumbo-content {
+  width: 983px;
+  height: 24.046875vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+@media (max-width: 989px) {
+  .jumbo-container .jumbo-content {
+    width: 100%;
+  }
+}
+.jumbo-container .jumbo-content .art-text {
+  position: absolute;
+  font-family: "Covered By Your Grace", sans-serif;
+  font-size: 1.5rem;
+  right: 4.45rem;
+  top: 2.7975rem;
+}
+@media (max-width: 768px) {
+  .jumbo-container .jumbo-content .art-text {
+    display: none;
+  }
+}
+.jumbo-container .jumbo-text .span-1 {
+  opacity: 0.1;
+  font-size: 2rem;
+}
+.jumbo-container .jumbo-text .span-2 {
+  font-size: 2rem;
+}
+.jumbo-container form .form-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media (max-width: 989px) {
+  .jumbo-container form .form-wrapper {
+    display: none;
+  }
+}
+.jumbo-container form .form-wrapper input {
+  border-radius: 1875rem;
+  border: none;
+  width: 35.8125rem;
+  height: 63px;
+}
+.jumbo-container form .form-wrapper input::placeholder {
+  text-indent: 20px;
+  color: #C7C7C7;
+  font-size: 1.125rem;
+}
+.jumbo-container form .form-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  width: 150px;
+  height: 51px;
+  background-color: #2D2D2D;
+  color: #FFF;
+  border-radius: 300px;
+  text-transform: capitalize;
+}
+.jumbo-container p {
+  color: #cacaca;
+}
+.jumbo-container p > span {
+  color: #2D2D2D;
 }

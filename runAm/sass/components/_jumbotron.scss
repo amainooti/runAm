@@ -1,0 +1,74 @@
+@use "../utils/mixins" as b;
+@use "../utils/mixins" as layout;
+@use "../utils/breakpoints" as *;
+@use "../base/variables" as v;
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+.jumbo-container {
+    background-color: v.$white-background;
+    width: 100%;
+    // height: 46.09375vh;
+    padding: 3rem 0;
+    display: grid;
+    place-items: center;
+    .jumbo-content {
+        width: 983px;
+        height: 24.046875vh;
+        position: relative;
+        @include layout.flex-row(center, center);
+        @include media("<=989px") {
+            width: 100%;
+        }
+        .art-text {
+            position: absolute;
+            font-family: 'Covered By Your Grace', sans-serif;
+            font-size: 1.5rem;
+            right: 4.45rem;
+            top: 2.7975rem;
+            @include media("<=tablet") {
+                display: none;
+            }
+        }
+    }
+    .jumbo-text{
+
+        .span-1 {
+        opacity: .1;
+        font-size: 2rem;
+        }
+        .span-2 {
+         font-size: 2rem;
+
+        }
+    }
+    form {
+        .form-wrapper{
+            @include layout.flex-row(start, center, 1.25rem);
+            @include media("<=989px") {
+                display: none;
+            }
+            input {
+            border-radius: 1875rem;
+            border: none;
+            width: 35.8125rem;
+            height: 63px;
+
+            &::placeholder {
+                text-indent: 20px;
+                color: #C7C7C7;
+                font-size: 1.125rem;
+            }
+        }
+        a {
+            @include b.button(v.$dark, v.$white);
+        }
+    }
+}
+
+p {
+    color: #cacaca;
+}
+p > span{
+    color: v.$dark;
+}
+}
