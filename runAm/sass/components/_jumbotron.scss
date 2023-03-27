@@ -19,6 +19,15 @@
         @include media("<=989px") {
             width: 100%;
         }
+        .line {
+               position: absolute;
+               right: 8.45rem;
+               top: 1.7975rem;
+               /* transform: rotate(31deg); */
+               width: 34px;
+               height: 1px;
+               background-color: black;
+        }
         .art-text {
             position: absolute;
             font-family: 'Covered By Your Grace', sans-serif;
@@ -27,11 +36,6 @@
             top: 2.7975rem;
             @include media("<=tablet") {
                 display: none;
-            }
-            .line {
-                width: 20px;
-                height: 1px;
-                background-color: black;
             }
         }
     }
