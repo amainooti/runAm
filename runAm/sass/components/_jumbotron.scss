@@ -5,8 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 .jumbo-container {
-    background-color: v.$white-background;
+    background: url("../../public/assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+
+    background-color: v.$white-background;
     // height: 46.09375vh;
     padding: 3rem 0;
     display: grid;
@@ -20,13 +24,10 @@
             width: 100%;
         }
         .line {
-               position: absolute;
-               right: 8.45rem;
-               top: 1.7975rem;
-               /* transform: rotate(31deg); */
-               width: 34px;
-               height: 1px;
-               background-color: black;
+            img {
+                width: 100px;
+            }
+
         }
         .art-text {
             position: absolute;

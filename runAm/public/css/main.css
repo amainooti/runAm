@@ -115,8 +115,11 @@ a:visited {
 }
 
 .jumbo-container {
-  background-color: #F4F4F4;
+  background: url("../../public/assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  background-color: #F4F4F4;
   padding: 3rem 0;
   display: grid;
   place-items: center;
@@ -135,14 +138,8 @@ a:visited {
     width: 100%;
   }
 }
-.jumbo-container .jumbo-content .line {
-  position: absolute;
-  right: 8.45rem;
-  top: 1.7975rem;
-  /* transform: rotate(31deg); */
-  width: 34px;
-  height: 1px;
-  background-color: black;
+.jumbo-container .jumbo-content .line img {
+  width: 100px;
 }
 .jumbo-container .jumbo-content .art-text {
   position: absolute;
