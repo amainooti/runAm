@@ -6,15 +6,11 @@
 
 .serv-main{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     padding :0 20px;
     box-sizing:border-box;
-    overflow-y: auto;
-
-&::-webkit-scrollbar {
-  display: none;
-}
     .serv-container{
         width: 307px;
         margin: 20px 20px;
