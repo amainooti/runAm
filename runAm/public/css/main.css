@@ -74,11 +74,13 @@ a:visited {
 .wrapper .nav-container .nav-items li {
   align-self: flex-start;
 }
-.wrapper .nav-container .nav-items li > a {
+.wrapper .nav-container .nav-items li a {
   text-transform: capitalize;
+  color: #878C95;
 }
-.wrapper .nav-container .logo-section h1 {
-  font-size: 2rem;
+.wrapper .nav-container .logo-section img {
+  width: 300px;
+  height: auto;
 }
 .wrapper .nav-container .authentication {
   display: flex;
@@ -91,7 +93,7 @@ a:visited {
   padding: 15px 30px;
   width: 150px;
   height: 51px;
-  background-color: #2D2D2D;
+  background-color: #231270;
   color: #fff;
   border-radius: 300px;
   text-transform: capitalize;
@@ -103,10 +105,11 @@ a:visited {
   padding: 15px 30px;
   width: 150px;
   height: 51px;
-  background-color: #F4F4F4;
-  color: #212121;
+  background-color: #FFF;
+  color: #231270;
   border-radius: 300px;
   text-transform: capitalize;
+  border: 2px solid #9A92BD;
 }
 @media (max-width: 768px) {
   .wrapper .nav-container .authentication {
@@ -115,8 +118,12 @@ a:visited {
 }
 
 .jumbo-container {
-  background-color: #F4F4F4;
+  background: url("../../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  background-position: 14%;
+  background-color: #F4F4F4;
   padding: 3rem 0;
   display: grid;
   place-items: center;
@@ -135,9 +142,31 @@ a:visited {
     width: 100%;
   }
 }
+.jumbo-container .jumbo-content .pointer {
+  position: absolute;
+  width: 100px;
+  right: 158px;
+  top: 16px;
+}
+@media (max-width: 768px) {
+  .jumbo-container .jumbo-content .pointer {
+    display: non;
+  }
+}
+.jumbo-container .jumbo-content .swirl {
+  position: absolute;
+  width: 100px;
+  right: 227px;
+}
+@media (max-width: 768px) {
+  .jumbo-container .jumbo-content .swirl {
+    display: none;
+  }
+}
 .jumbo-container .jumbo-content .art-text {
   position: absolute;
   font-family: "Covered By Your Grace", sans-serif;
+  color: #FFF;
   font-size: 1.5rem;
   right: 4.45rem;
   top: 2.7975rem;
@@ -148,17 +177,19 @@ a:visited {
   }
 }
 .jumbo-container .jumbo-text .span-1 {
-  opacity: 0.1;
+  opacity: 0.6;
   font-size: 2rem;
+  color: white;
 }
 .jumbo-container .jumbo-text .span-2 {
   font-size: 2rem;
+  color: white;
 }
 .jumbo-container form .form-wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 @media (max-width: 989px) {
   .jumbo-container form .form-wrapper {
@@ -183,7 +214,7 @@ a:visited {
   padding: 15px 30px;
   width: 150px;
   height: 51px;
-  background-color: #2D2D2D;
+  background-color: #231270;
   color: #FFF;
   border-radius: 300px;
   text-transform: capitalize;
@@ -191,8 +222,9 @@ a:visited {
 .jumbo-container p {
   color: #cacaca;
 }
-.jumbo-container p > span {
-  color: #2D2D2D;
+.jumbo-container p span {
+  color: white;
+  font-weight: bold;
 }
 
 .serv-main {

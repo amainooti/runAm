@@ -6,6 +6,8 @@ const path = require('path');
 const app = express();
 
 
+
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -19,6 +21,20 @@ app.use(express.urlencoded({ extended: true }));
 
 // index page
 app.get('/', function(req, res) {
+  res.render('home');
+});
+
+app.get('/dashboard', function(req, res) {
+  res.render('home');
+});
+
+
+app.get('/login', function(req, res) {
+  res.render('home');
+});
+
+
+app.get('/sign_up', function(req, res) {
   res.render('home');
 });
 
