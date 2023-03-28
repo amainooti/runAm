@@ -87,7 +87,7 @@
             }
         }
         a {
-            @include b.button(v.$dark, v.$white);
+            @include b.button(v.$dark-blue, v.$white);
         }
     }
 }
