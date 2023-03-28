@@ -1,20 +1,38 @@
 
 
 @use "../base/variables" as v;
+@use "../utils/breakpoints" as b;
 
 
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+.text-container {
+    padding :0 20px;
+}
 
 .serv-main{
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
     padding :0 20px;
     box-sizing:border-box;
-    .serv-container{
-        width: 307px;
-        margin: 20px 20px;
 
+    @include b.media("<=1394px"){
+        grid-template-columns: repeat(3, 1fr);
+    };
+    @include b.media("<=1092px"){
+        grid-template-columns: repeat(2, 1fr);
+    };
+    @include b.media("<=846px"){
+        grid-template-columns: repeat(1, 1fr);
+    };
+
+    .serv-container{
+        width: 19.1875rem;
+        margin: 20px 20px;
 
     .serv-content{
         position: relative;
@@ -175,3 +193,4 @@ text-align: center;
     }
 }
 
+}

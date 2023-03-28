@@ -227,40 +227,63 @@ a:visited {
   font-weight: bold;
 }
 
-.serv-main {
+.wrapper {
   width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+.wrapper .text-container {
+  padding: 0 20px;
+}
+.wrapper .serv-main {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
-.serv-main .serv-container {
-  width: 307px;
+@media (max-width: 1394px) {
+  .wrapper .serv-main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1092px) {
+  .wrapper .serv-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 846px) {
+  .wrapper .serv-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wrapper .serv-main .serv-container {
+  width: 19.1875rem;
   margin: 20px 20px;
 }
-.serv-main .serv-container .serv-content {
+.wrapper .serv-main .serv-container .serv-content {
   position: relative;
 }
-.serv-main .serv-container .serv-content .serv-img .business-img {
+.wrapper .serv-main .serv-container .serv-content .serv-img .business-img {
   position: relative;
   border-radius: 20px;
 }
-.serv-main .serv-container .serv-content .serv-img .profile-img {
+.wrapper .serv-main .serv-container .serv-content .serv-img .profile-img {
   position: absolute;
   width: 58px;
   height: 58px;
   left: 15px;
   top: 148px;
 }
-.serv-main .serv-container .serv-content .serv-img .fa-heart {
+.wrapper .serv-main .serv-container .serv-content .serv-img .fa-heart {
   color: red;
   box-sizing: border-box;
   position: absolute;
   right: 10px;
   top: 20px;
 }
-.serv-main .serv-container .serv-content .serv-img .distance {
+.wrapper .serv-main .serv-container .serv-content .serv-img .distance {
   font-family: "Circular Std";
   font-style: normal;
   font-weight: 450;
@@ -273,13 +296,13 @@ a:visited {
   left: 156px;
   top: 182px;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t1 {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t1 {
   display: flex;
   justify-content: space-between;
   height: 30px;
   margin-bottom: 5px;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t1 .Business-name {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t1 .Business-name {
   width: 145px;
   font-family: "Circular Std";
   font-style: normal;
@@ -287,7 +310,7 @@ a:visited {
   font-size: 20px;
   color: #202329;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t1 .star-rate {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t1 .star-rate {
   display: flex;
   width: 20px;
   font-family: "Circular Std";
@@ -297,10 +320,10 @@ a:visited {
   margin-right: 8px;
   color: #4C5361;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t1 .fa-star {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t1 .fa-star {
   color: gold;
 }
-.serv-main .serv-container .serv-content .serv-text .business-price {
+.wrapper .serv-main .serv-container .serv-content .serv-text .business-price {
   width: 77px;
   height: 28px;
   font-family: "Circular Std";
@@ -311,19 +334,19 @@ a:visited {
   text-align: center;
   color: #202329;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t2 {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t2 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t2 .Persons-name {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t2 .Persons-name {
   width: 114px;
   font-style: normal;
   font-weight: 450px;
   font-size: 14px;
   color: #4C5361;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t2 .Persons-time {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t2 .Persons-time {
   width: 73px;
   height: 24px;
   font-style: normal;
@@ -332,11 +355,11 @@ a:visited {
   text-align: center;
   color: #4C5361;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t3 span {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t3 span {
   border-radius: 20px;
   padding: 5px;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t3 .span-s {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t3 .span-s {
   background-color: #ECF7FF;
   width: 43px;
   height: 24px;
@@ -348,7 +371,7 @@ a:visited {
   text-align: center;
   color: #104928;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t3 .span-c {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t3 .span-c {
   background-color: #FCE9EB;
   width: 66px;
   height: 24px;
@@ -357,7 +380,7 @@ a:visited {
   line-height: 24px;
   text-align: center;
 }
-.serv-main .serv-container .serv-content .serv-text .serv-t3 .span-d {
+.wrapper .serv-main .serv-container .serv-content .serv-text .serv-t3 .span-d {
   background-color: #E9F7EF;
   color: #104928;
   width: 43px;
