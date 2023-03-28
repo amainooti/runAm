@@ -155,8 +155,7 @@ a:visited {
 .jumbo-container .jumbo-content .swirl {
   position: absolute;
   width: 100px;
-  top: 64px;
-  right: 224px;
+  right: 227px;
 }
 @media (max-width: 768px) {
   .jumbo-container .jumbo-content .swirl {
