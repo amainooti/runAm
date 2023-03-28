@@ -2,19 +2,24 @@
 
 @use "../base/variables" as v;
 
+
+
 .serv-main{
-   
     width: 100%;
-   
+    display: flex;
     margin: 0 auto;
     padding :0 20px;
     box-sizing:border-box;
+    overflow-y: auto;
+
+&::-webkit-scrollbar {
+  display: none;
+}
     .serv-container{
         width: 307px;
-       
         margin: 20px 20px;
 
-    
+
     .serv-content{
         position: relative;
         .serv-img{
@@ -33,7 +38,7 @@
                 color: red;
                 box-sizing: border-box;
                 position: absolute;
-                
+
                 right: 10px;
                 top: 20px;
             }
@@ -43,15 +48,15 @@
                 font-weight: 450;
                 font-size: 14px;
                 line-height: 24px;
-               
+
                 color: #F6F7F7;
                 position: absolute;
                 width: 132px;
                 height: 24px;
                 left: 156px;
                 top: 182px;
-            
-              
+
+
 
             }
         }
@@ -83,7 +88,7 @@
                 .fa-star{
                     color: gold;
                 }
-              
+
 
             }
             .business-price{
@@ -96,13 +101,13 @@
                 line-height: 28px;
                 text-align: center;
                 color: #202329;
-              
+
             }
             .serv-t2{
                 display: flex;
                 justify-content: space-between;
                 margin-top: 20px;
-               
+
                 .Persons-name{
                     width: 114px;
                     font-style: normal;
@@ -120,13 +125,13 @@
                     color: #4C5361;
 
                 }
-           
+
             }
             .serv-t3{
                 span{
                     border-radius: 20px;
                     padding: 5px;
-                    
+
                 }
 
                 .span-s{
@@ -163,11 +168,11 @@ text-align: center;
                     font-weight: 450;
                     font-size: 12px;
 
-                    
+
                 }
-               
-            
-                
+
+
+
             }
         }
     }
