@@ -104,7 +104,7 @@ a:visited {
   padding: 15px 30px;
   width: 150px;
   height: 51px;
-  background-color: #F4F4F4;
+  background-color: #FFF;
   color: #231270;
   border-radius: 300px;
   text-transform: capitalize;
@@ -221,7 +221,7 @@ a:visited {
 .jumbo-container p {
   color: #cacaca;
 }
-.jumbo-container p > span {
+.jumbo-container p span {
   color: white;
   font-weight: bold;
 }

@@ -40,7 +40,7 @@
                   right: 227px;
                 @include media("<=tablet") {
                     display: none;
-                    
+
                 }
             }
 
@@ -95,10 +95,9 @@
 
 p {
     color: #cacaca;
-
-}
-p > span{
-    color: white;
-    font-weight: bold;
+ span{
+        color: white;
+        font-weight: bold;
+    }
 }
 }
