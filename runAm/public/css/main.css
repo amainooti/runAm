@@ -78,8 +78,9 @@ a:visited {
   text-transform: capitalize;
   color: #878C95;
 }
-.wrapper .nav-container .logo-section h1 {
-  font-size: 2rem;
+.wrapper .nav-container .logo-section img {
+  width: 300px;
+  height: auto;
 }
 .wrapper .nav-container .authentication {
   display: flex;
