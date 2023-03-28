@@ -10,17 +10,19 @@
     display: grid;
     place-content: center;
 .text-container {
-    padding :0 20px;
+   padding-inline:41.99px;
+   padding-top: 32px;
 }
 
 .serv-main{
-    width: 80%;
+    width: 99%;
+    gap:12px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding :0 20px;
     box-sizing:border-box;
 
-    @include b.media("<=1394px"){
+    @include b.media("<=1428px"){
         grid-template-columns: repeat(3, 1fr);
     };
     @include b.media("<=1092px"){

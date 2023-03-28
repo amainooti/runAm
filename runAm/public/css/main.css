@@ -50,11 +50,10 @@ a:visited {
   font-size: 3rem;
 }
 
-.wrapper {
+.nav-wrapper {
   width: 100%;
-  margin: 0 auto;
 }
-.wrapper .nav-container {
+.nav-wrapper .nav-container {
   text-align: center;
   height: 14.84375vh;
   width: calc(98.9% - 5rem);
@@ -64,29 +63,34 @@ a:visited {
   gap: 0;
   margin: 0 3rem;
 }
-.wrapper .nav-container .nav-items {
+.nav-wrapper .nav-container .nav-items {
   padding: 0;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 2.325rem;
 }
-.wrapper .nav-container .nav-items li {
+.nav-wrapper .nav-container .nav-items li {
   align-self: flex-start;
 }
-.wrapper .nav-container .nav-items li a {
+.nav-wrapper .nav-container .nav-items li a {
   text-transform: capitalize;
   color: #878C95;
 }
-.wrapper .nav-container .logo-section img {
-  width: 300px;
+.nav-wrapper .nav-container .logo-section img {
+  width: 18.75rem;
   height: auto;
 }
-.wrapper .nav-container .authentication {
+@media (max-width: 1408px) {
+  .nav-wrapper .nav-container .logo-section img {
+    width: 13.75rem;
+  }
+}
+.nav-wrapper .nav-container .authentication {
   display: flex;
   gap: 8px;
 }
-.wrapper .nav-container .authentication .dark {
+.nav-wrapper .nav-container .authentication .dark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +102,7 @@ a:visited {
   border-radius: 300px;
   text-transform: capitalize;
 }
-.wrapper .nav-container .authentication .light {
+.nav-wrapper .nav-container .authentication .light {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +116,12 @@ a:visited {
   border: 2px solid #9A92BD;
 }
 @media (max-width: 768px) {
-  .wrapper .nav-container .authentication {
+  .nav-wrapper .nav-container .authentication {
+    display: none;
+  }
+}
+@media (max-width: 988px) {
+  .nav-wrapper .nav-container .authentication {
     display: none;
   }
 }
@@ -234,16 +243,18 @@ a:visited {
   place-content: center;
 }
 .wrapper .text-container {
-  padding: 0 20px;
+  padding-inline: 41.99px;
+  padding-top: 32px;
 }
 .wrapper .serv-main {
-  width: 80%;
+  width: 99%;
+  gap: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0 20px;
   box-sizing: border-box;
 }
-@media (max-width: 1394px) {
+@media (max-width: 1428px) {
   .wrapper .serv-main {
     grid-template-columns: repeat(3, 1fr);
   }
