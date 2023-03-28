@@ -1,0 +1,176 @@
+
+
+@use "../base/variables" as v;
+
+.serv-main{
+   
+    width: 100%;
+   
+    margin: 0 auto;
+    padding :0 20px;
+    box-sizing:border-box;
+    .serv-container{
+        width: 307px;
+       
+        margin: 20px 20px;
+
+    
+    .serv-content{
+        position: relative;
+        .serv-img{
+            .business-img{
+                position: relative;
+                border-radius:20px ;
+            }
+            .profile-img{
+                position: absolute;
+                width: 58px;
+                height: 58px;
+                left: 15px;
+                top: 148px;
+            }
+            .fa-heart{
+                color: red;
+                box-sizing: border-box;
+                position: absolute;
+                
+                right: 10px;
+                top: 20px;
+            }
+            .distance{
+                font-family: 'Circular Std';
+                font-style: normal;
+                font-weight: 450;
+                font-size: 14px;
+                line-height: 24px;
+               
+                color: #F6F7F7;
+                position: absolute;
+                width: 132px;
+                height: 24px;
+                left: 156px;
+                top: 182px;
+            
+              
+
+            }
+        }
+        .serv-text{
+            .serv-t1{
+                display: flex;
+                justify-content: space-between;
+                height: 30px;
+                margin-bottom: 5px;
+                .Business-name{
+                    width: 145px;
+                    font-family: 'Circular Std';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #202329;
+
+                }
+                .star-rate{
+                    display: flex;
+                    width: 20px;
+                     font-family: 'Circular Std';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-right: 8px;
+                    color: #4C5361;
+                }
+                .fa-star{
+                    color: gold;
+                }
+              
+
+            }
+            .business-price{
+                width: 77px;
+                height: 28px;
+                font-family: 'Circular Std';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                color: #202329;
+              
+            }
+            .serv-t2{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+               
+                .Persons-name{
+                    width: 114px;
+                    font-style: normal;
+                    font-weight: 450px;
+                    font-size: 14px;
+                    color: #4C5361;
+                }
+                .Persons-time{
+                    width: 73px;
+                    height: 24px;
+                    font-style: normal;
+                    font-weight: 450;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #4C5361;
+
+                }
+           
+            }
+            .serv-t3{
+                span{
+                    border-radius: 20px;
+                    padding: 5px;
+                    
+                }
+
+                .span-s{
+                    background-color: #ECF7FF;
+                    width: 43px;
+                    height: 24px;
+                    font-family: 'Circular Std';
+                    font-style: normal;
+                    font-weight: 450;
+                    font-size: 12px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #104928;
+                }
+                .span-c{
+                    background-color:#FCE9EB;
+                    width: 66px;
+                    height: 24px;
+                    font-weight: 450;
+                    font-size: 12px;
+                    line-height: 24px;
+
+
+text-align: center;
+
+                }
+                .span-d{
+                    background-color: #E9F7EF;
+                    color: #104928;
+                    width: 43px;
+                    height: 24px;
+                    font-family: 'Circular Std';
+                    font-style: normal;
+                    font-weight: 450;
+                    font-size: 12px;
+
+                    
+                }
+               
+            
+                
+            }
+        }
+    }
+    }
+}
+
