@@ -1,41 +1,18 @@
 
 
 @use "../base/variables" as v;
-@use "../utils/breakpoints" as b;
-
-
-.wrapper {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    place-content: center;
-.text-container {
-   padding-inline:41.99px;
-   padding-top: 32px;
-}
 
 .serv-main{
-    width: 99%;
-    gap:12px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+   
+    width: 100%;
+    margin: 0 auto;
     padding :0 20px;
     box-sizing:border-box;
-
-    @include b.media("<=1428px"){
-        grid-template-columns: repeat(3, 1fr);
-    };
-    @include b.media("<=1092px"){
-        grid-template-columns: repeat(2, 1fr);
-    };
-    @include b.media("<=846px"){
-        grid-template-columns: repeat(1fr);
-    };
-
     .serv-container{
-        width: 19.1875rem;
+        width: 307px;
         margin: 20px 20px;
 
+    
     .serv-content{
         position: relative;
         .serv-img{
@@ -54,7 +31,7 @@
                 color: red;
                 box-sizing: border-box;
                 position: absolute;
-
+                
                 right: 10px;
                 top: 20px;
             }
@@ -64,15 +41,15 @@
                 font-weight: 450;
                 font-size: 14px;
                 line-height: 24px;
-
+               
                 color: #F6F7F7;
                 position: absolute;
                 width: 132px;
                 height: 24px;
                 left: 156px;
                 top: 182px;
-
-
+            
+              
 
             }
         }
@@ -104,7 +81,7 @@
                 .fa-star{
                     color: gold;
                 }
-
+              
 
             }
             .business-price{
@@ -117,13 +94,13 @@
                 line-height: 28px;
                 text-align: center;
                 color: #202329;
-
+              
             }
             .serv-t2{
                 display: flex;
                 justify-content: space-between;
                 margin-top: 20px;
-
+               
                 .Persons-name{
                     width: 114px;
                     font-style: normal;
@@ -141,13 +118,13 @@
                     color: #4C5361;
 
                 }
-
+           
             }
             .serv-t3{
                 span{
                     border-radius: 20px;
                     padding: 5px;
-
+                    
                 }
 
                 .span-s{
@@ -184,15 +161,14 @@ text-align: center;
                     font-weight: 450;
                     font-size: 12px;
 
-
+                    
                 }
-
-
-
+               
+            
+                
             }
         }
     }
     }
 }
 
-}
