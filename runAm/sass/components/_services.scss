@@ -29,7 +29,7 @@
         grid-template-columns: repeat(2, 1fr);
     };
     @include b.media("<=846px"){
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1fr);
     };
 
     .serv-container{
