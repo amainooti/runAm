@@ -266,7 +266,7 @@ a:visited {
 }
 @media (max-width: 846px) {
   .wrapper .serv-main {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 }
 .wrapper .serv-main .serv-container {
