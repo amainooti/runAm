@@ -4,7 +4,10 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const { connectionDb } = require('./config/db');
 
+
+connectionDb();
 
 
 
@@ -24,19 +27,19 @@ app.get('/', function(req, res) {
   res.render('home');
 });
 
-app.get('/dashboard', function(req, res) {
+app.get('/profile', function(req, res) {
   res.render('home');
 });
 
 
-app.get('/login', function(req, res) {
+app.post('/login', function(req, res) {
   const name = req.body.name;
   const password = req.body.password;
 
 });
 
 
-app.get('/sign_up', function(req, res) {
+app.post('/sign_up', function(req, res) {
   res.render('home');
 });
 
