@@ -392,8 +392,96 @@ a:visited {
   height: auto;
 }
 
-.footer {
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding: 20px 0 20px 0;
+}
+
+.login-container {
+  background-color: white;
+  width: 40%;
+  padding: 35px 45px;
+  color: #707581;
+  margin: 0 25%;
+  border-radius: 30px;
+}
+.login-container .close {
+  font-size: 30px;
+  text-align: right;
+}
+.login-container .close:hover,
+.login-container .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.login-container .login-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 3px;
+}
+.login-container .login-content h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #4C5361;
+}
+.login-container .login-content .lgbtn {
+  height: 51px;
+  border-radius: 25px;
+  margin: 0.3rem;
+  background-color: white;
+  border: 2px solid #9A92BD;
+  color: #4F418D;
+  font-size: 16px;
+  line-height: 28px;
+}
+.login-container .loginform {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .loginform label {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 24px;
+}
+.login-container .loginform input {
+  margin: 0 0 15px 0;
+  height: 44px;
+  border-radius: 25px;
+  border: 2px solid #ADB0B6;
+  color: #ADB0B6;
+}
+.login-container .loginform .names {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.login-container .loginform .first, .login-container .loginform .second {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .loginform .lgbtn2 {
+  height: 51px;
+  border-radius: 25px;
+  margin: 0.3rem;
+  background-color: #231270;
+  border: 2px solid #9A92BD;
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+}
+.login-container .loginform p a {
+  color: #6C609F;
 }
