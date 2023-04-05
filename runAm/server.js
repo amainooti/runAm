@@ -7,7 +7,7 @@ const app = express();
 const { connectionDb } = require('./config/db');
 
 
-connectionDb();
+
 
 
 
@@ -28,7 +28,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/profile', function(req, res) {
-  res.render('home');
+  res.render('profile');
+});
+
+app.get('/dashboard', function(req, res) {
+  res.render('dashboard.ejs');
 });
 
 

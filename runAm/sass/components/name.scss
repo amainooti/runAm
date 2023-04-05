@@ -1,0 +1,129 @@
+@use '../utils/mixins' as b;
+@use '../utils/mixins' as *;
+@use '../utils//breakpoints' as *;
+@use "../base/variables" as v;
+
+.dashboard{
+    width: 90%;
+    margin: 0 auto;
+    .dashboard-text{
+        line-height: 50px;
+        .profile{
+        
+            @include button(#FFFFFF,#4F418D,);
+            width: 200px;
+            height: 48px;
+            
+        }
+
+        h1{
+            font-size: 30px;
+        }
+        @include flex-row(space-between, center);
+    }
+    .details{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        .details-lists{
+            line-height: 50px;
+            div {
+                :hover{
+                    background-color: #EDEEEF;
+                    display: flex;
+                    border-radius: 40px;
+                    width: 200px;
+                    height: 50px;
+                    text-align: center;
+                    // transform: translateX(-4px);
+                    padding: 3px;
+                    margin-right: 2px ;
+                }
+                  
+
+
+
+                  
+
+            
+            }
+        }
+        .details-show{
+            margin-left: 20%;
+            .Personal-detail{
+               .Tail{
+                  height:117px ;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                   }
+            }
+    }
+                 .service-show{
+                    margin-left: 20%;
+                    .Personal-detail{
+                       .Tail{
+                          height:117px ;
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+        
+                          .serv-t3{
+                            span{
+                                border-radius: 20px;
+                                padding: 5px;
+            
+                            }
+            
+                            .span-s{
+                                background-color: #ECF7FF;
+                                width: 43px;
+                                height: 24px;
+                                font-family: 'Circular Std';
+                                font-style: normal;
+                                font-weight: 450;
+                                font-size: 12px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #104928;
+                            }
+                            .span-c{
+                                background-color:#FCE9EB;
+                                width: 66px;
+                                height: 24px;
+                                font-weight: 450;
+                                font-size: 12px;
+                                line-height: 24px;
+                                text-align: center;
+            
+                            }
+                            .span-d{
+                                background-color: #E9F7EF;
+                                color: #104928;
+                                width: 43px;
+                                height: 24px;
+                                font-family: 'Circular Std';
+                                font-style: normal;
+                                font-weight: 450;
+                                font-size: 12px;
+            
+            
+                            }
+            
+            
+            
+                        }
+
+                        .dashboard-img{
+                            width: 100px;
+                            height: 115px;
+                        }
+                          
+                        }
+
+            }
+    
+        }
+        
+}
+}

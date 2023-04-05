@@ -1,0 +1,48 @@
+@use '../utils/mixins' as b;
+@use '../utils/mixins' as *;
+@use '../utils//breakpoints' as *;
+@use "../base/variables" as v;
+
+.nav-wrapper2{
+    width: 100%;
+    border-bottom:1px solid #9A92BD;
+   
+    .nav-container {
+    text-align: center;
+    height: 14.84375vh;
+    @include flex-row(space-between, center);
+    margin: 0 3rem ;
+  
+
+
+    .logo-section {
+        img{
+            width: 18.75rem; 
+            height: auto;
+            @include media("<=1408px"){
+                 width: 13.75rem;
+            }
+        }
+        .custom-select {
+            width: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            border-width: 2px;
+            background-color: aqua;
+            background-size: 20px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+          }
+          
+          .custom-select option {
+            border-radius: 10px;
+            padding: 10px;
+          }
+
+  
+
+    
+}
+}
+}
